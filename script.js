@@ -27,3 +27,20 @@ alert( `Hello, ${name}!` ); // Hello, John!
 
 // embed an expression
 alert( `the result is ${1 + 2}` ); // the result is 3
+
+// day 2
+// JavaScript is a synchronous single-threaded language therefore it excecutes one code at a time
+
+var n = 2
+function square (num) {
+    var ans = num * num;
+    return ans;
+}
+var square2 = square(n)
+var square4 = square(4)
+
+// js parses through the file line by line first assigning undefined as it is in the memory.
+// then again assigns the values in the code. as soon as this is done we get the number 2 in 'n'.
+// which is then assihned to num in the code block. Thereby returns answer as 4
+// the (num) is the parametrer
+// square(n/4) is the arguement which is used to replace (num) in the params
