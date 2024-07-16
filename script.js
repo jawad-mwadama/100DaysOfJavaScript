@@ -85,5 +85,10 @@ function b(){
 }
 // EXPLANATION;
 // A global execution context is created(2 components), the memory and code context
-
+// in the memory component (variable environment), x will be undefined 
+// 'a' and 'b' will point to the functions. {Hoisting}.therefore therejavaScript will be directly pointing to the declared functions
+// What is a callstack?
+// A callstack iw where all the global execution contexts are stored
+// so a second (mini) GEC will be created in the first GEC. where 'x' will be like a new value
+// 
 
